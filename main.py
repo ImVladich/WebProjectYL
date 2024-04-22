@@ -81,6 +81,7 @@ def user():
         passwords = db_sess.query(Passwords).filter(Passwords.user_id == current_user.id).all()
         return render_template("user.html", user=current_user.login, passwords=passwords)
 
+# ывлзаоыджлвращшырахщшфышрва
 
 if __name__ == '__main__':
     db_session.global_init("db/passwords.db")
