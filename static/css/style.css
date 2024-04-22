@@ -1,0 +1,84 @@
+.index {
+    /*color: brown;*/
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 15%;
+}
+
+.layered-image {
+    background: /*linear-gradient(to top, transparent, mistyrose),*/ url("/static/img/background.gif") no-repeat;
+    background-size: cover;
+    /*opacity: 0.7;*/
+
+}
+
+.reg-form {
+    width: 30%;
+    margin: 15% auto auto;
+    background-color: #F9DAFF;
+    border-radius: 20px;
+}
+
+.add-form {
+    width: 30%;
+    margin: 20px auto auto;
+}
+
+.form_login {
+    margin: 15% 20% 20%;
+    background-color: #F9DAFF;
+    border-radius: 50px;
+}
+
+.mb-3 {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    background-color: #C39BD3;
+    margin: auto;
+}
+
+.user {
+    background-color: #F9DAFF;
+}
+
+.psswd-table {
+    width: 50%;
+    margin: auto;
+}
+
+#password-input{
+    outline: none;
+	border: none;
+	background:none;
+	font-size: 16px;
+}
+
+.password-control {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align : middle;
+	margin-left: 10px;
+	background: url("/static/img/view.svg") 0 0 no-repeat;
+}
+
+.password-control.view {
+	background: url("/static/img/no-view.svg") 0 0 no-repeat;
+}
+
+.copy{
+    opacity: 1;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align : middle;
+	margin-left: 10px;
+	background: url("/static/img/copy.svg") 0 0 no-repeat;
+}
+
+.copy:active{
+    opacity: 0.5
+}
