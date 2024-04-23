@@ -15,7 +15,7 @@ def load_user(user_id):
     return db_sess.query(User).get(user_id)
 
 
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template("index.html")
 
@@ -24,7 +24,7 @@ def index():
 @login_required
 def logout():
     logout_user()
-    return redirect("/")
+    return redirect("/index")
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -80,6 +80,7 @@ def user():
         db_sess.commit()
         passwords = db_sess.query(Passwords).filter(Passwords.user_id == current_user.id).all()
         return render_template("user.html", user=current_user.login, passwords=passwords)
+
 
 # ывлзаоыджлвращшырахщшфышрва
 
